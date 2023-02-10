@@ -10,32 +10,25 @@
         Console.Write("Input 3 word: ");
         string word3 = Console.ReadLine();
 
-        Console.WriteLine("Which word do you like [1,2,3]");
-
-        int choise = int.Parse(Console.ReadLine());
-
-        Console.Write("Your word is ");
-        if (choise==1)
+        while (true)
         {
-            Console.WriteLine(word1);
-        }
-        if (choise == 2)
-        {
-            Console.WriteLine(word2);
-        }
-        if (choise == 3)
-        {
-            Console.WriteLine(word3);
-        }
+            Console.WriteLine("Which word do you like [1,2,3]");
 
+            int choise = int.Parse(Console.ReadLine());
 
-
+            Console.Write("Your word is ");
+            if (choise == 1)
+            {
+                Console.WriteLine(word1);
+            }
+            if (choise == 2)
+            {
+                Console.WriteLine(word2);
+            }
+            if (choise == 3)
+            {
+                Console.WriteLine(word3);
+            }
+        }
     }
-
-
-
 }
-
-
-
-
