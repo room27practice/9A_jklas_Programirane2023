@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9AProgramirane", "9AProgramirane.csproj", "{AD5E99E6-AB69-48FC-9640-E6497947C1C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "..\Arrays\Arrays.csproj", "{628CD76F-5E49-4907-BC3B-7CB1C929FAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "..\Arrays\Arrays.csproj", "{628CD76F-5E49-4907-BC3B-7CB1C929FAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysTasks", "..\ArraysTasks\ArraysTasks.csproj", "{EDCCE17C-FD01-4E2B-BFCB-2B8A31CED841}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{628CD76F-5E49-4907-BC3B-7CB1C929FAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628CD76F-5E49-4907-BC3B-7CB1C929FAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{628CD76F-5E49-4907-BC3B-7CB1C929FAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCCE17C-FD01-4E2B-BFCB-2B8A31CED841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCCE17C-FD01-4E2B-BFCB-2B8A31CED841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCCE17C-FD01-4E2B-BFCB-2B8A31CED841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCCE17C-FD01-4E2B-BFCB-2B8A31CED841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
