@@ -4,16 +4,78 @@
     {
         static void Main(string[] args)
         {
-            TrainTask1();
+            string[] array = Console.ReadLine().Split(new[] { " ", "-", "_" }, StringSplitOptions.RemoveEmptyEntries);
+
+            int maxRepeating = 0;
+            string element = string.Empty;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                string current = array[i];
+                int repeatingCurrent = 0;
+
+                for (int j = i+1; j < array.Length; j++)
+                {
+                    if (current == array[j])
+                    {
+                        repeatingCurrent++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                if (repeatingCurrent>maxRepeating)
+                {
+                    maxRepeating = repeatingCurrent;
+                    element = current;
+                }
+            }
+            for (int i = 0; i <= maxRepeating; i++)
+            {
+                Console.Write(element+" ");
+            }
+            Console.WriteLine();
+
+            //"1-P-d_lsad ss-d- -"["1" "P" "d" "lsad" "ss " "d" " "]
 
 
 
+            //TrainTask1();
+
+
+            // EqualLeftRightSum();
 
 
 
 
             // JoinOfArrayDemo();
+        }
 
+        private static void EqualLeftRightSum()
+        {
+            int[] numbers =
+                 Console.ReadLine()
+                 .Split(" ").Select(x => int.Parse(x)).ToArray();// 1 2 3 3
+            for (int i = 0; i < numbers.Length; i++)//2
+            {
+                int leftSum = 0;
+                int rightSum = 0;
+                for (int L = 0; L < i; L++)
+                {
+                    leftSum += numbers[L];
+                }
+                for (int R = i + 1; R < numbers.Length; R++)
+                {
+                    rightSum += numbers[R];
+                }
+                if (leftSum == rightSum)
+                {
+                    Console.WriteLine(i);
+                    return;
+                }
+            }
+            Console.WriteLine("no");
         }
 
         private static void TrainTask1()

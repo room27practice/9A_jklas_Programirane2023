@@ -1,0 +1,2 @@
+﻿using System;
+namespace ConsoleApp3 { internal class Program { static void Main(string[] args) { Dog sharo = new Dog("Sharo", 3); sharo.Bark(5); } } public class Dog { public string Name; public int Age; public Dog(string name, int age) { Name = name; Age = age; } public void Bark(int times) { for (int i = 0; i < times; i++) { Console.WriteLine("Woof!"); } } } }
